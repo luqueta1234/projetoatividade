@@ -1,0 +1,29 @@
+{{>partials/header}}
+
+<br><br><br><br>
+
+<form method="POST" action="login-resultado">
+
+  <input type="text" name="email" placeholder="Digite seu e-mail">
+  <input type="submit" value="Enviar">
+
+    <br> <br>
+
+  <input type="password" name="senha" placeholder="Digite sua senha">
+  <input type="submit" value="Enviar">
+
+</form>
+
+{{#mostrarEmail}}
+    Seu e-mail é {{email}}
+{{/mostrarEmail}}
+
+<br>
+
+{{#mostrarSenha}}
+    Sua senha não deve ser mostrada.
+{{/mostrarSenha}}
+
+<br><br><br><br>
+
+{{>partials/footer}}

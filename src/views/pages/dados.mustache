@@ -1,0 +1,46 @@
+{{>partials/header}}
+
+<br><br><br><br>
+
+<h2>Qual o seu nome? criatura</h2>
+<form method="get">
+
+    <input type="text" name="nome" placeholder="Digite seu nome">
+    <input type="submit" value="Enviar">
+
+    <input type="number" name="idade" placeholder="Digite sua idade">
+    <input type="submit" value="Enviar">
+
+    <input type="number" name="telefone" placeholder="Digite seu telefone">
+    <input type="submit" value="Enviar">
+
+    <input type="text" name="endereco" placeholder="Digite seu endereço">
+    <input type="submit" value="Enviar">
+
+</form>
+
+{{#nome}}
+    Seu nome é {{nome}}
+    
+{{/nome}}
+
+
+{{#idade}}
+    Sua idade é {{idade}}
+{{/idade}}
+
+
+{{#telefone}}
+    Seu telefone é {{telefone}}
+{{/telefone}}
+
+
+{{#endereco}}
+    Seu endereço é {{endereco}}
+{{/endereco}}
+
+
+
+<br><br><br><br>
+
+{{>partials/footer}}
